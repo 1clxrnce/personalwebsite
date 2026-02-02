@@ -1,0 +1,124 @@
+/* GENERAL STYLES */
+body {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #e9ecef;
+  color: #212529;
+  line-height: 1.6;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+p {
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+a {
+  transition: all 0.3s ease;
+}
+
+/* HEADER */
+.navbar {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.nav-link {
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #6c757d !important;
+}
+
+/* SECTIONS */
+.section {
+  background-color: #f8f9fa;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.section h2 {
+  color: #495057;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* SKILLS LIST */
+.skills-list {
+  margin-left: 20px;
+  line-height: 1.9;
+  font-size: 1.1rem;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+/* CARD CONTAINER */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+/* CARD STYLES */
+.card {
+  background-color: #dee2e6;
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card img.project-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #495057;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.card p {
+  color: #6c757d;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  background-color: #ced4da;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}

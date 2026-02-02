@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Form</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #e9ecef;
+      padding: 0;
+      margin: 0;
+      color: #212529;
+    }
+
+    .form-wrapper {
+      max-width: 400px;
+      margin: 40px auto;
+      background-color: #f8f9fa;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .form-wrapper h2 {
+      color: #495057;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      color: #495057;
+      font-weight: 500;
+    }
+
+    button.btn-register,
+    button.btn-login {
+      background: #6c757d;
+      color: white;
+      border: 1px solid #6c757d;
+      padding: 8px 16px;
+      margin-right: 10px;
+    }
+
+    button.btn-register:hover,
+    button.btn-login:hover {
+      background: #5a6268;
+      border-color: #5a6268;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-center align-items-center w-100">
+                <a class="navbar-brand me-3" href="landing.html">
+                    <img src="josh.png" alt="Logo" height="63">
+                </a>
+                <form class="d-flex me-3" role="search">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                <ul class="navbar-nav d-flex flex-row gap-3 mb-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="landing.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Me</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="abouttme.html">About Me Page</a></li>
+                            <li><a class="dropdown-item" href="abouttme.html#skills">Skills</a></li>
+                            <li><a class="dropdown-item" href="abouttme.html#proj">Projects</a></li>
+                            <li><a class="dropdown-item" href="abouttme.html#contact">Contact Me</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="form.html">Login and Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- FORM -->
+<div class="form-wrapper">
+  <h2>User Form</h2>
+
+  <form>
+    <div class="form-group">
+      <label>Username</label>
+      <input type="text" class="form-control" maxlength="10">
+    </div>
+
+    <div class="form-group">
+      <label>Password</label>
+      <input type="password" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" class="form-control">
+    </div>
+
+    <button type="button" class="btn-register">Register</button>
+    <button type="button" class="btn-login" onclick="window.location.href='landing.html'">Login</button>
+    <input type="reset" class="btn btn-outline-secondary">
+  </form>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2026 clxrnce.de | BS Information Technology Student</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
